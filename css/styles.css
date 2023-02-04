@@ -1,0 +1,229 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /* ======== common style ========== */
+.section {
+    padding: 70px 0;
+}
+
+.section h2.section-head {
+    color: #000;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section h2.section-head::after {
+    content: "";
+    background-color: #e84118;
+    display: block;
+    width: 10%;
+    height: 3px;
+    margin: 20px auto;
+}
+
+ /* ======== common style end =======*/
+
+#header{
+    color: #fff;
+    background-color: #34495e;
+}
+
+#menu{
+    list-style-type: none;
+    display: flex;
+}
+#menu li {
+    margin-top: 13px;
+}
+#menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.5s;
+}
+
+#menu li a:hover {
+    color: rgb(253, 158, 129);
+}
+
+#logo {
+    margin-top: 5px;
+    font-size: 2em;
+}
+
+/* ============ banner ============== */
+
+#banner {
+    background: url(../images/banner.jpg) no-repeat 0 0;
+    background-size: cover;
+    height: 50vh;
+}
+
+.banner-tittle {
+    background: rgba(0, 36, 59, 0.6);
+    padding: 10px;
+    margin: 3em 0 0 0;
+}
+
+.banner-tittle h1 {
+    color: #fff;
+}
+
+.banner-tittle p.lead {
+    color: #fff;
+    padding: 10px;
+}
+
+
+
+/* ========= services ========== */
+
+
+.service-box {
+    text-align: center;
+}
+
+.service-box i.fas {
+    color: #e84118;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+/* ======== testimonials ========== */
+#testimonials {
+    background: url(../images/testimon.jpg) no-repeat 0 0;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    padding: 50px 0;
+    position: relative;
+}
+.testimonial img {
+    width: 4em;
+    border-radius: 2em;
+}
+
+#testimonials h2 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+/* ======== testimonials end ========== */
+
+.news-post img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.news-post h3 {
+    font-size: 1.5em;
+
+}
+.news-post h3 a {
+    color: #e84118;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.post-date{
+    font-size: 0.8em;
+    margin-bottom: 1.5em;
+    font-weight: 300;
+}
+
+.news-post p {
+    font-weight: lighter;
+}
+
+a.read-more{
+    color: #e84118;
+    text-decoration: none;
+}
+
+a.read-more::after {
+    content: "\f101";
+    font-family: FontAwesome;
+    padding-left: 5px;
+    color: #e84118;
+    font-size: small;
+}
+
+
+/* ========= footer ========= */
+#footer {
+    color: #fff;
+    background-color: #34495e;
+    padding: 20px 0;
+}
+.footer-widget h4::after {
+    content: "";
+    background-color: #e84118;
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin: 5px 0;
+}
+.footer-widget a{
+    color: #fff;
+}
+.blog {
+    list-style: none;
+    padding: 0;
+}
+
+.blog li a {
+    text-decoration: none;
+}
+
+.blog li::before {
+    content: "\f101";
+    font-family: FontAwesome;
+    padding-right: 5px;
+    color: #e84118;
+    font-size: small;
+}
+
+
+#social {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+}
+#social li {
+    margin: 8px 0 0 10px;
+}
+
+#social a{
+    text-decoration: none;
+    font-size: larger;
+    color: #e84118;
+}
+
+#copy {
+    color: #e84118;
+    background-color: #1f2d3a;
+}
+.copyright {
+    margin-top: 8px;
+}
+
+@media (max-width: 786px){
+    .testimonial{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .news-post{
+        margin-bottom: 20px;
+    }
+    #copy {
+        text-align: center;
+    }
+    #social {
+        justify-content: center;
+    }
+}
+
